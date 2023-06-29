@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "hal-misc-mod",
+	"version": "${version}",
+	"name": "Hal Misc Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"halcovo"
+	],
+	"contact": {
+		"homepage": "https://twitter.com/halcovo",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hal-misc-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.halcovo.HalMiscMod"
+		],
+		"client": [
+			"dev.halcovo.HalMiscModClient"
+		],
+		"fabric-datagen": [
+          "dev.halcovo.HalMicModDataGenerator"
+		]
+	},
+	"mixins": [
+		"hal-misc-mod.mixins.json",
+		{
+			"config": "hal-misc-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wool",
+  "pattern": [
+    "X#X",
+    "#Y#",
+    "X#X"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "#": {
+      "item": "minecraft:pink_dye"
+    },
+    "Y": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "item": "halmiscmod:trock",
+    "count": 2
+  }
+}
